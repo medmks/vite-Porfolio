@@ -1,14 +1,16 @@
 import { Suspense, useRef} from 'react'
-import { Canvas,useFrame } from '@react-three/fiber'
+import { Canvas,ReactThreeFiber,useFrame } from '@react-three/fiber'
 import { Points,PointMaterial,Preload, } from '@react-three/drei'
-// import * as THREE from 'three'
-
 import * as random from "maath/random/dist/maath-random.cjs"
+
+
 const Stars = () => {
 
-  const ref=useRef(null);
+  // const ref = useRef<ForwardRefComponent<PointsBuffersProps | PointsInstancesProps, THREE.Points>>(null);
+  const ref = useRef<ReactThreeFiber.Object3DNode<typeof Points, typeof Points> | undefined>(null);
+
   const sphere=random.inSphere(new Float32Array(5000),{radius:1.2})
-  useFrame((state,delta)=>{
+  useFrame((_state,delta)=>{
     if(ref.current){
           ref.current.rotation.x -=delta /20
           ref.current.rotation.y -=delta /30

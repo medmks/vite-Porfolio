@@ -19,11 +19,11 @@ const ServicesCard=({entry,index}:{entry:cardProp, index:number})=>{
                   className="w-full green-pink-gradient p-[1px]  rounded-[20px] shadow-card">
 
                     <div className="bg-tertiary h-[280px] rounded-[20px] flex justify-center items-center flex-col gap-8 p-8"
-                      options={{
-                        scale:1,
-                        speed:1040,
-                        max:66
-                      }}     
+                      // options={{
+                      //   scale:1,
+                      //   speed:1040,
+                      //   max:66
+                      // }}     
                              >
                         <img src={entry.icon} className=" object-contain w-20 h-20  "/>
 
