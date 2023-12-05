@@ -15,7 +15,7 @@ import {
   git,
   // figma,
   // docker,
-  meta,
+  // meta,
   // starbucks,
   // tesla,
   // shopify,
@@ -119,7 +119,7 @@ const experiences = [
   {
     title: "frontend Developer",
     company_name: "wahbweb",
-    icon: meta,
+    icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTA3IiBoZWlnaHQ9IjEwNiIgdmlld0JveD0iMCAwIDEwNyAxMDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik02IDBIMjdWODVINlYwWiIgZmlsbD0iIzE4MTczNiIvPgo8cGF0aCBkPSJNNDMgMEg2NFY4NUg0M1YwWiIgZmlsbD0iIzE4MTczNiIvPgo8cGF0aCBkPSJNODAgMEgxMDFWODVIODBWMFoiIGZpbGw9IiMxODE3MzYiLz4KPHBhdGggZD0iTTEwNyA4NVYxMDZIMEw5LjE3OTM5ZS0wNyA4NUwxMDcgODVaIiBmaWxsPSIjMTgxNzM2Ii8+Cjwvc3ZnPgo=",
     iconBg: "#383E56",
     date: "March 2020 - April 2021",
     points: [

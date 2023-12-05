@@ -20,23 +20,23 @@ const Contact = () => {
         const {name,value}=event.target
           setform({...form,[name]:value})
             console.log(form);
-  }
+  }     
+
+
   const HandelSubmit=(e: React.FormEvent<HTMLFormElement>)=>{
     e.preventDefault();  
     setloading(true);
     emailjs
     .send(
-      import.meta.env.VITE_APP_EMAILJS_SERVICE_ID, //S!:SERVICE_ID
-      import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,  //S!:TEMPLATE_ID
+        "service_y8t3m9w","template_op9nq7k",
       {
         from_name:form?.name,
         to_name:"Mohamed",
          from_email:form?.email,
-         to_email:"mguernaoui03@gmail.com",
+         to_email:"mguernaoui03@Gmail.com",
          message:form?.msg
-      },
-      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY //S!:PUBLIC_KEY 
-      ).then(()=>{
+      },"nz71wgxeTImlqOQRm")
+      .then(()=>{
         setloading(false);
         alert("Thank you. I will get back to you as soon as possible.");
 
@@ -59,7 +59,7 @@ const Contact = () => {
     <div className='xl:mt-12 xl:flex-row  flex-col-reverse flex gab-10 overflow-hidden '>
       <motion.div 
       variants={slideIn("left","tween",0.2,1)}
-      className='flex-[0.75] bg-black-100 p-8 rounded-2xl' >
+      className='flex-[0.75]  bg-fiverey backdrop-blur-sm  p-8 rounded-2xl' >
       <p className={`${styles.sectionSubText}`} >Get in touch </p>
       <h1 className={`${styles.sectionHeadText}`}>Contact.</h1>
       <form ref={formRef} className='mt-12 flex flex-col gab-8' onSubmit={HandelSubmit}  >
@@ -71,7 +71,7 @@ const Contact = () => {
           value={form?.name}
           onChange={HandelChange}
           placeholder="Whats's your name?"
-          className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none  font-medium   '
+          className='bg-tertiary py-4 px-6 placeholder:text-secondary border border-gray-700 text-white rounded-lg outline-none   font-medium   '
           />
         </label>
         <label className='flex flex-col'>
@@ -82,7 +82,7 @@ const Contact = () => {
           value={form?.email}
           onChange={HandelChange}
           placeholder="Whats's your email?"
-          className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none  font-medium   '
+          className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border border-gray-700  font-medium   '
           />
         </label>
         <label className='flex flex-col'>
@@ -93,7 +93,7 @@ const Contact = () => {
           value={form?.msg}
           onChange={HandelChange}
           placeholder="Whats's your Message?"
-          className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none  font-medium   '
+          className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border border-gray-700  font-medium   '
           />
         </label>
         <button  type='submit' className='bg-tertiary  py-3 px-8 outline-none w-fit mt-12  shadow-primary font-bold rounded-2xl shadow-md  '>
