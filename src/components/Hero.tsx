@@ -1,13 +1,9 @@
 import { motion } from "framer-motion"
 import { styles } from "../styles"
-// import { ComputersCanvas } from "./canvas"
 import { Tilt } from "react-tilt"
 import { fadeIn, staggerContainer, textVariant, zoomIn } from "../utility/motion"
 import  BlobComponent  from "./blobComponent"
-
 // import Animation from "../../public/Animation.json"
-
-
 const Hero = () => {
 
   return (
