@@ -18,13 +18,13 @@ type ProjectsProp={
 // eslint-disable-next-line react-refresh/only-export-components
 const ProjectCard=({project,index}:{project:ProjectsProp,index:number})=>{
   return<>
-    <motion.div variants={fadeIn("top","spring",0.5*index,0.75)}
+    <motion.div variants={fadeIn("up","spring",0.5 * index,0.75)}
     >
       <Tilt 
         options={{
-          scale:1,
-          speed:1040,
-          max:66
+          max: 45,
+          scale: 1,
+          speed: 450,
           }}     
         className=" bg-tertiary p-5 h-full sm:w-[360px] w-full rounded-2xl  ">
             <div className="relative w-full">
@@ -59,7 +59,7 @@ const Works = () => {
   return  <>
   
     <motion.div
-    variants={textVariant(0.2)}>
+    variants={textVariant(0.1)}>
       <p className="text-[17px] text-secondary ">My work </p>
       <h1 className={`${styles.heroHeadText} text-[24px]`} >Projects.</h1>
       <p className={`${styles.sectionSubText} mt-5 text-[16px]`}>

@@ -3,7 +3,7 @@ const BlobComponent = () => {
   return (
 <div className="">
   <div className="blob-c min-h-screen overflow-hidden absolute w-full filter blur-40">
-    <div className="shape-blob hero bg-blue-500 h-60 w-80 rounded-full opacity-70 absolute left-75 top-40 animate-transform animate-movement-one"></div>
+    <div className="shape-blob lg:right-3 lg:bottom-0 hero bg-blue-500 h-60 w-80 rounded-full opacity-70 absolute left-75 top-40 animate-transform animate-movement-one"></div>
     <div className="shape-blob one bg-blue-900 "></div>
     <div className="shape-blob six bg-blue-400 h-70 w-100 rounded-full absolute left-160 top-200 rotate-180 animate-transform animate-movement-two"></div>
     <div className="shape-blob four bg-blue-700 h-100 w-80 rounded-full absolute left-350 top-60 rotate-180 animate-transform animate-movement-two"></div>

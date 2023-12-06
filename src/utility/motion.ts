@@ -1,3 +1,25 @@
+export const zoomInWithMove = (delay: number, duration: number, moveX: number, moveY: number) => {
+  return {
+    hidden: {
+      scale: 0,
+      opacity: 0,
+      x: moveX,
+      y: moveY,
+    },
+    show: {
+      scale: 1,
+      opacity: 1,
+      x: 0,
+      y: 0,
+      transition: {
+        type: "tween",
+        delay: delay,
+        duration: duration,
+        ease: "easeOut",
+      },
+    },
+  };
+};
 
 export const textVariant = (delay:number) => {
 return {
