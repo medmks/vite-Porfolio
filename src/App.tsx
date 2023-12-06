@@ -1,10 +1,6 @@
-// import { useState } from 'react'
-import { Hero, Navbar,About,Contact,Experience,Tech,Works,StarsCanvas} from './components';
-// import './App.css'
+import { Hero, Navbar,About,Contact,Experience,Tech,Works,StarsCanvas} from './components'
 import { BrowserRouter } from 'react-router-dom';
 const  App=()=> {
-  // const [count, setCount] = useState(0)
-
   return (
     <>
 <BrowserRouter>
