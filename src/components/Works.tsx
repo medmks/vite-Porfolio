@@ -67,7 +67,7 @@ const Works = () => {
        From web applications to mobile apps, I've taken on exciting challenges and brought innovative ideas to life.
         These projects represent my journey as a developer, each one contributing to my growth and expertise
         . Whether it's crafting intuitive user interfaces, optimizing backend performance, or creating engaging user experiences, 
-        I've poured my dedication into each endeavor.
+        
       </p>
     </motion.div>
     <div className="mt-20 gap-7 flex flex-wrap justify-center  ">
