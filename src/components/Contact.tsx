@@ -19,12 +19,16 @@ const Contact = () => {
   const HandelChange:ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement  >=(event)=>{
         const {name,value}=event.target
           setform({...form,[name]:value})
-            console.log(form);
+           
   }     
 
 
   const HandelSubmit=(e: React.FormEvent<HTMLFormElement>)=>{
     e.preventDefault();  
+    if (!form?.email || !form.name || !form?.msg){
+      alert("please fill all the form")
+      return ;
+    }
     setloading(true);
     emailjs
     .send(

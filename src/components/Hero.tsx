@@ -40,7 +40,7 @@ const Hero = () => {
                           background: "-webkit-linear-gradient(#3c98b3, #34d399)",
                           WebkitBackgroundClip: "text",
                           WebkitTextFillColor: "transparent",
-                        }}className={`text-emerald-400   underline underline-offset-4  font-normal`} >Mohamed</span> dedicated to digitizing businesses for scalable success </h1>
+                        }}className={`text-emerald-400   underline underline-offset-4  font-normal`} >Mohamed</span> Full-Stack developer </h1>
           </motion.div>
           <motion.div
             variants={textVariant(1.3)}>

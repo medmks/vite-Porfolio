@@ -30,8 +30,10 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import Trackapp from "./Trackapp.jpg";
+import BlogAr from "./blogAr.jpg";
 
 export {
+  BlogAr,
   Trackapp,
   logo,
   backend,

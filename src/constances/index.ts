@@ -3,6 +3,7 @@ import {
   backend,
   creator,
   web,
+  BlogAr,
   // javascript,
   typescript,
   // html,
@@ -21,7 +22,7 @@ import {
   // shopify,
   // carrent,
   jobit,
-  tripguide,
+
   Trackapp,
   // threejs,
 } from "../assets";
@@ -105,11 +106,11 @@ const technologies = [
 
 const experiences = [
   {
-    title: "frontend Developer",
-    company_name: "wahbweb",
-    icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTA3IiBoZWlnaHQ9IjEwNiIgdmlld0JveD0iMCAwIDEwNyAxMDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik02IDBIMjdWODVINlYwWiIgZmlsbD0iIzE4MTczNiIvPgo8cGF0aCBkPSJNNDMgMEg2NFY4NUg0M1YwWiIgZmlsbD0iIzE4MTczNiIvPgo8cGF0aCBkPSJNODAgMEgxMDFWODVIODBWMFoiIGZpbGw9IiMxODE3MzYiLz4KPHBhdGggZD0iTTEwNyA4NVYxMDZIMEw5LjE3OTM5ZS0wNyA4NUwxMDcgODVaIiBmaWxsPSIjMTgxNzM2Ii8+Cjwvc3ZnPgo=",
+    title: "Internship frontend Developer",
+    company_name: "webenclic",
+    icon: "https://webenclic.com/wp-content/uploads/2023/06/Logo-wec-pro1-e1686499174246.png",
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "october 2023 - december 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, and other developers to create high-quality products.",
@@ -190,12 +191,12 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "First Arabic Blog",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A first arabic blog platform that allows users to read and engage with their interests and also encorage content writers to post their works in the arabic way.",
     tags: [
       {
-        name: "nextjs",
+        name: "reactjs",
         color: "blue-text-gradient",
       },
       {
@@ -203,12 +204,12 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "mongoDb",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: BlogAr,
+    source_code_link: "https://github.com/medmks/vite-mern-auth-blog",
   },
 ];
 
