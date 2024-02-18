@@ -3,6 +3,7 @@ import { styles } from "../styles"
 import { Tilt } from "react-tilt"
 import { fadeIn, staggerContainer, textVariant, zoomIn } from "../utility/motion"
 import  BlobComponent  from "./blobComponent"
+import { profile } from "../assets"
 // import Animation from "../../public/Animation.json"
 const Hero = () => {
 
@@ -12,7 +13,7 @@ const Hero = () => {
     initial="hidden"
     whileInView="show"
     viewport={{once:true,amount:0.25}}
-    className={`  z-max-w-7xl mx-auto relative z-0`}
+    className={`z-max-w-7xl mx-auto relative z-0`}
     >
     <section className="relative w-full h-screen mx-auto">
       <BlobComponent/>
@@ -21,7 +22,6 @@ const Hero = () => {
           <div className="bg-[#915eff] w-7 h-7 rounded-full shadow shadow-black "/>
           <div className="w-1 sm:h-96  h-96 violet-gradient  shadow shadow-black"/>
         </div>     
-
         <div className=""> 
             {/* <h1 className={`${styles.heroHeadText}`}>I'm <span className="text-[#915eff]">Mohamed</span></h1> */}
           <Tilt className=" w-fit">
@@ -29,14 +29,13 @@ const Hero = () => {
                 variants={fadeIn("right","spring",0.5*1,0.75)}
                 className=" green-pink-gradient   rounded-[100px] p-1 shadow-card">
                   <div className="rounded-full flex justify-center ">
-                    <img className=" rounded-full w-32 h-32 lg:w-52 lg:h-52 object-cover shadow-lg shadow-black border border-gray-700" src="https://media.licdn.com/dms/image/D5603AQEe3Zbno284ig/profile-displayphoto-shrink_400_400/0/1691711393375?e=1706140800&v=beta&t=YHy-TJpMzN1097zuE6amDBEr6MIbHi2s5qnoMVc-0UA" alt="" />
-
+                    <img className=" rounded-full w-32 h-32 lg:w-52 lg:h-52 object-cover shadow-lg shadow-black border border-gray-700" src={profile} alt="" />
                   </div>        
               </motion.div>
           </Tilt>&nbsp;
           <motion.div
             variants={textVariant(0.9)}>
-                <h1 className={` ${styles.heroSubText}   font-light`}>Salam, I'm <span style={{
+                <h1 className={` ${styles.heroSubText}   font-light`}>I'm <span style={{
                           background: "-webkit-linear-gradient(#3c98b3, #34d399)",
                           WebkitBackgroundClip: "text",
                           WebkitTextFillColor: "transparent",
@@ -64,7 +63,6 @@ const Hero = () => {
         <div className="w-full flex justify-end  ">
             {/* <Lottie animationData={Animation} loop={false} /> */}
         </div>
-
       </div>   
     {/* <ComputersCanvas/> */}
     <div className=" absolute xs:bottom-10 bottom-10 w-full h-9 hidden sm:flex  justify-center items-center" >

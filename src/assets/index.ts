@@ -31,8 +31,10 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import Trackapp from "./Trackapp.jpg";
 import BlogAr from "./blogAr.jpg";
+import profile from "./profile.jpg"
 
 export {
+  profile,
   BlogAr,
   Trackapp,
   logo,
