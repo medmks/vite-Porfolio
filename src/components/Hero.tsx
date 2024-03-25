@@ -59,7 +59,7 @@ const Hero = () => {
   </motion.div>
   <div className="mt-4">
   <div className="flex items-center space-x-2 text-base">
-    <h4 className={`${styles.sectionSubText} mt-3 w-fit min-w-64 whitespace-normal`}>worked with</h4>
+    <h4 className={`sm:text-[15px] text-[14px] text-secondary  tracking-wider uppercase  mt-3 w-fit min-w-64 whitespace-normal`}>worked with</h4>
     {/* <span className="rounded-full bg-slate-100 px-2 py-1 text-xs font-semibold text-slate-700">10</span> */}
   </div>
   <div className="mt-3 flex -space-x-2 overflow-hidden py-1 px-1">
