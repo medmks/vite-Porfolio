@@ -4,26 +4,21 @@ import {
   creator,
   web,
   BlogAr,
-  // javascript,
   typescript,
-  // html,
-  // css,
   reactjs,
-  // redux,
+  P2,
   tailwind,
   nodejs,
   mongodb,
   git,
-  // figma,
-  // docker,
-  // meta,
-  // starbucks,
-  // tesla,
-  // shopify,
-  // carrent,
+  wp1,
+  wp2,
+  wp3,
+
   jobit,
 
-  Trackapp,
+
+
   // threejs,
 } from "../assets";
 
@@ -118,6 +113,19 @@ const experiences = [
       "Participating in code reviews and providing constructive feedback to other developers.",
     ], 
   },
+  {
+    title: "Internship FullStack Developer",
+    company_name: "Tekency Web Digital Agency",
+    icon: "https://tekency.com/wp-content/uploads/2020/05/Logo-240.png",
+    iconBg: "#383E56",
+    date: "February 2024 - April 2024",
+    points: [
+      "Developing and maintaining Shopify applications using Remix.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ], 
+  },
 
 ];
 
@@ -149,6 +157,7 @@ const testimonials = [
 ];
 
 const projects = [
+
   {
     name: "Activities Track",
     description:"TrackApp is web application aims to collects daily activities data and tasks and mesuring the estimated time using charts for targeted task. the app also can read CSV file imported from Notion template,and represent these data as chart",
@@ -166,7 +175,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: Trackapp,
+    image: P2,
     source_code_link: "https://github.com/medmks/TrackApp",
   },
   {
@@ -213,4 +222,48 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const WordpressProjects = [
+
+  {
+    name: "Randonne Maroc",
+    description:"Randonnée Maroc is a site dedicated to hiking on which you can find many destination packages in Morocco. This site Mohamed bennouri, an organizer of trekking and hiking in Morocco and mountain and desert guide.",
+    tags: [
+      {
+        name: "WordPress",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: wp1,
+    source_code_link: "https://github.com/medmks/TrackApp",
+  },
+  {
+    name: "BBKTours",
+    description:
+      "BBK TOURS is a tourist transportation company, it provides reliable, comfortable and secure transportation for tourists, while allowing them to discover local attractions and historical sites in the area.",
+    tags: [
+      {
+        name: "WordPress",
+        color: "blue-text-gradient",
+      },
+
+    ],
+    image: wp2,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "MultiservicesPro",
+    description:
+"Trusted and renowned company that offers a wide range of services to individuals and businesses around the world. We strive to simplify and facilitate various processes, thereby ensuring a seamless experience for our customers.",
+    tags: [
+      {
+        name: "WordPress",
+        color: "blue-text-gradient",
+      },
+
+    ],
+    image: wp3,
+    source_code_link: "https://github.com/medmks/vite-mern-auth-blog",
+  },
+];
+
+export { services, technologies, experiences, testimonials, WordpressProjects,projects };

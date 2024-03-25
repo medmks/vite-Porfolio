@@ -1,5 +1,5 @@
 import { github } from "../assets"
-import { projects } from "../constances"
+import { projects,WordpressProjects } from "../constances"
 import { SectionWrapper } from "../hoc"
 import { styles } from "../styles"
 import { Tilt } from "react-tilt"
@@ -29,12 +29,17 @@ const ProjectCard=({project,index}:{project:ProjectsProp,index:number})=>{
         className=" bg-tertiary p-5 h-full sm:w-[360px] w-full rounded-2xl  ">
             <div className="relative w-full">
               <img src={project.image} alt="kk" className="w-full h-full object-full  rounded-2xl "/>
-              <div className="flex justify-end absolute inset-0 m-3 card-img_hover">
-                <div className="  black-gradient h-10 w-10 rounded-full flex justify-center items-center cursor-pointer  " onClick={()=>window.open(project.source_code_link,"_blank")}>
-                  <img src={github} alt="" className="w-1/2 h-1/2 object-contain" />
-                </div>
+             { project.tags[0].name !== "WordPress"  &&(
+                            <div className="flex justify-end absolute inset-0 m-3 card-img_hover">
+                            <div className="  black-gradient h-10 w-10 rounded-full flex justify-center items-center cursor-pointer  " onClick={()=>window.open(project.source_code_link,"_blank")}>
+                              
+                              <img src={github} alt="" className="w-1/2 h-1/2 object-contain" />
+            
+                            </div>
+                          </div>
+                       
+             ) }
               </div>
-            </div>
             <div className="mt-7 flex flex-col">
               <h3 className="font-bold text-[24px]">{project.name}</h3>
               <p className=" leading-[25px] text-secondary text-[14px]" >{project.description}</p>
@@ -72,11 +77,27 @@ const Works = () => {
     </motion.div>
     <div className="mt-20 gap-7 flex flex-wrap justify-center  ">
         {
-          projects.map((pro,i)=>{return(
+          projects.map((pro,i)=>{
+            return(
             <ProjectCard key={i} project={pro} index={i} />
           )})
         }
-      </div>
+    </div>
+
+    <motion.div
+    variants={textVariant(0.1)}>
+    {/* <h1 className={`${styles.heroHeadText} text-[18px]`} >WordPress Projects.</h1> */}
+    </motion.div>
+
+    <div className="mt-20 gap-7 flex flex-wrap justify-center  ">
+        {
+          WordpressProjects.map((pro,i)=>{
+            return(
+            <ProjectCard key={i} project={pro} index={i} />
+          )})
+        }
+    </div>
+
  
     </>
   

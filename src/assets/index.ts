@@ -32,8 +32,16 @@ import tripguide from "./tripguide.png";
 import Trackapp from "./Trackapp.jpg";
 import BlogAr from "./blogAr.jpg";
 import profile from "./profile.jpg"
+import wp1 from "./wordpress1.jpg"
+import wp2 from "./wp2.jpg"
+import wp3 from "./wp3.jpg"
+import P2 from "./Managet.jpg"
 
 export {
+  P2,
+  wp3,
+  wp2,
+  wp1,
   profile,
   BlogAr,
   Trackapp,

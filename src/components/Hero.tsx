@@ -57,7 +57,21 @@ const Hero = () => {
         </div>
   
   </motion.div>
+  <div className="mt-4">
+  <div className="flex items-center space-x-2 text-base">
+    <h4 className={`${styles.sectionSubText} mt-3 w-fit min-w-64 whitespace-normal`}>worked with</h4>
+    {/* <span className="rounded-full bg-slate-100 px-2 py-1 text-xs font-semibold text-slate-700">10</span> */}
+  </div>
+  <div className="mt-3 flex -space-x-2 overflow-hidden py-1 px-1">
+    <img className="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="https://avatars.githubusercontent.com/u/71933266?v=4" alt=""/>
+    <img className="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="https://avatars.githubusercontent.com/u/39573679?v=4" alt=""/>
+    <img className="inline-block h-12 w-12 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80" alt=""/>
 
+  </div>
+  <div className="mt-3 text-sm font-medium">
+    <a href="#" className="text-blue-500">+ 5 others</a>
+  </div>
+</div>
             {/* <p className={`${styles.heroSubText} mt-2 text-white-100`}> I'm Full-stack  <br className="sm:block hidden" /> and cross platform Apps developer </p> */}
         </div>
         <div className="w-full flex justify-end  ">
